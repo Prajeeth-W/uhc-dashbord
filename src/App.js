@@ -32,7 +32,7 @@ const App = () => {
         <Route path="/addStudent" component={AddStudent} />
         {/* <Route path="/notFound" component={PageNotF} />*/ }
         <Route path="/login" component={Login} /> 
-        <Route path="notf" component={NotFound} /> 
+        <Route path="/notf" component={NotFound} /> 
 
       </Router>
     </div>
