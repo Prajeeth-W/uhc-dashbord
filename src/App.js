@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
+
 import Main from './components/main/Main';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
-
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import AddStudent from './components/pages/AddStudent/AddStudent';
+import Login from './components/pages/Login/Login';
+import NotFound from './components/pages/NotFound/NotFound';
 
 const App = () => {
 
@@ -27,6 +30,9 @@ const App = () => {
         <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
 
         <Route path="/addStudent" component={AddStudent} />
+        {/* <Route path="/notFound" component={PageNotF} />*/ }
+        <Route path="/login" component={Login} /> 
+        <Route path="notf" component={NotFound} /> 
 
       </Router>
     </div>

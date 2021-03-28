@@ -1,7 +1,7 @@
 import React from "react";
 
 class AddStudent extends React.Component {
-  state = {    fName: "", midInit: "", lName: "", stName: "", stNo: "", apartNo: "", city: "", state: "",    ZIP: "", phoneNo: "", email: "", courseCode: "" };
+  state = {fName:"",midInit:"",lName:"",stName:"",stNo:"",apartNo:"",city:"",state:"",ZIP:"", phoneNo:"",email:"",courseCode:"" };
 
   inputUpdate = (event) => {
     let key = event.target.name;
@@ -20,12 +20,9 @@ class AddStudent extends React.Component {
       <div class="two fields">  
         <div class= "six wide field" >
           <label> Student Number:</label>
-          <input type="text" name="stNo" value = {this.state.stNo} onChange = {(ev) => this.setState({stNo: ev.target.value}) } />                      
-        
+          <input type="text" name="stNo" value = {this.state.stNo} onChange = {(ev) => this.setState({stNo: ev.target.value}) } /> 
         </div>
-
-        <p>(TESTING - {this.state.fName} )  </p> {/*TEST*/}
-        
+        <p>(TESTING - {this.state.fName} )  </p> {/*TEST*/}        
       </div>
 
     <div class="three fields">
@@ -35,7 +32,7 @@ class AddStudent extends React.Component {
       
       </div>
       <div class="field">   
-        <label> Middle Initias:</label>
+        <label> Middle Initials:</label>
         <input type="text" name="midInit" value = {this.state.midInit} onChange = {(ev) => this.setState({midInit: ev.target.value.toUpperCase()}) } />
       
       </div>  
