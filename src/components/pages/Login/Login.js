@@ -6,36 +6,36 @@ import "./Login.css";
 class Login extends Component {
   render() {
     return (
-        <div class="ui middle aligned center aligned grid">
-        <div class="column">
-          <h2 class="ui teal image header">
-            <img src="assets/images/logo.png" class="image"/>
-            <div class="content">
+        <div className="ui middle aligned center aligned grid">
+        <div className="column">
+          <h2 className="ui teal image header">
+            <img src="Project.jpeg" className="image"/>
+            <div className="content">
               Log-in to your account
             </div>
           </h2>
-          <form class="ui large form">
-            <div class="ui stacked segment">
-              <div class="field">
-                <div class="ui left icon input">
-                  <i class="user icon"></i>
+          <form className="ui large form">
+            <div className="ui stacked segment">
+              <div className="field">
+                <div className="ui left icon input">
+                  <i className="user icon"></i>
                   <input type="text" name="email" placeholder="E-mail address"/>
                 </div>
               </div>
-              <div class="field">
-                <div class="ui left icon input">
-                  <i class="lock icon"></i>
+              <div className="field">
+                <div className="ui left icon input">
+                  <i className="lock icon"></i>
                   <input type="password" name="password" placeholder="Password"/>
                 </div>
               </div>
-              <div class="ui fluid large teal submit button">Login</div>
+              <div className="ui fluid large teal submit button">Login</div>
             </div>
       
-            <div class="ui error message"></div>
+            <div className="ui error message"></div>
       
           </form>
       
-          <div class="ui message">
+          <div className="ui message">
             New to us? <a href="#">Sign Up</a>
           </div>
         </div>
