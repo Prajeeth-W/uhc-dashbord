@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css';
 
 import Main from './components/main/Main';
 import Navbar from './components/navbar/Navbar';
