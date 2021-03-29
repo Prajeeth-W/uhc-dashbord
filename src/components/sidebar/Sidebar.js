@@ -33,38 +33,26 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-archive"></i>
-                    <a href="#">Warehouse</a>
+                    <a href="#">Payments</a>
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-handshake-o"></i>
                     <a href="#">Contracts</a>
                 </div>
 
-                <h2>Lorem Ipsum</h2>
+                <h2>Configurations</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-question"></i>
-                    <a href="#">Requests</a>
-                </div>
-                <div className="sidebar__link">
-                    <i className="fa fa-sign-out"></i>
-                    <a href="#">Leave Policy</a>
-                </div>
-                <div className="sidebar__link">
-                    <i className="fa fa-calendar-check-o"></i>
-                    <a href="#">Special Days</a>
+                    <a href="#">Add Courses</a>
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-files-o"></i>
-                    <a href="#">Apply For Leave</a>
+                    <a href="#">Add new Student</a>
                 </div>
-                <h2>Lorem Ipusm</h2>
+                <h2>Reporting</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-money"></i>
-                    <a href="#">Payroll</a>
-                </div>
-                <div className="sidebar__link">
-                    <i className="fa fa-briefcase"></i>
-                    <a href="#">Paygrade</a>
+                    <a href="#">View Reports</a>
                 </div>
                 <div className="sidebar__logout">
                     <i className="fa fa-power-off"></i>
