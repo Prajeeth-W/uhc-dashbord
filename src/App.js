@@ -24,16 +24,17 @@ const App = () => {
   return (
     <div className="container">
       <Router>
-        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
-        {/* <h1> UHC Admin Dashbord</h1>   */}
-        <Route path='/' exact component={Main} />
+        
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />      
         <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
 
-        <Route path="/addStudent" component={AddStudent} />
-        {/* <Route path="/notFound" component={PageNotF} />*/ }
-        <Route path="/login" component={Login} /> 
-        <Route path="/notf" component={NotFound} /> 
-
+        <Switch>
+          <Route path='/' exact component={Main} />
+          <Route path="/addStudent" component={AddStudent} />        
+          <Route path="/login" component={Login} /> 
+          <Route component={NotFound} /> 
+        </Switch>
+        
       </Router>
     </div>
   );
