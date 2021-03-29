@@ -4,20 +4,7 @@ import {Bar, Line, Pie} from 'react-chartjs-2';
 export default class Charts extends Component {
     constructor (props){
         super(props);
-        this.state = { chartData : props.chartData
-            // labels :['Course-1','Course-2','Course-3','Course-4','Course-5','Course-6' ],
-            // datasets:[{
-            //     label:'No of Students',
-            //     data :[1111,2222,3333,1444,4555,2266],
-            //     backgroundColor:['rgba(255, 99, 132, 0.6)',
-            //     'rgba(54, 162, 235, 0.6)',
-            //     'rgba(255, 206, 86, 0.6)',
-            //     'rgba(75, 192, 192, 0.6)',
-            //     'rgba(153, 102, 255, 0.6)',
-            //     'rgba(255, 159, 64, 0.6)',
-            //     'rgba(255, 99, 132, 0.6)']
-            // }]
-        } 
+        this.state = { chartData : props.chartData} 
     }
 
     static defaultProps = {

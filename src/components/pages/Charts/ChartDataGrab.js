@@ -22,7 +22,7 @@ export default class ChartDataGrab extends Component {
         labels: ['course-1', 'course-2', 'course-3', 'course-4', 'course-5', 'course-6'],
         datasets:[
           {
-            label:'Population',
+            label:'No of Students',
             data:[
               217594,
               175451,
