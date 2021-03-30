@@ -48,7 +48,7 @@ const App = () => {
           <Route path='/' exact component={Main} />
           <Route path="/addStudent" component={AddStudent} />        
           <Route path="/login" component={Login} /> 
-          <Route path="/cdg" component={ChartDataGrab} /> 
+          <Route path="/charts" component={ChartDataGrab} /> 
           <Route component={NotFound} /> 
         </Switch>
         
