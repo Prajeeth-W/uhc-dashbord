@@ -52,7 +52,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 <h2>Reporting</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-money"></i>
-                    <a href="/charts">View Reports</a>
+                    <a href="/AllCharts">View Reports</a>
                 </div>
                 <div className="sidebar__logout">
                     <i className="fa fa-power-off"></i>

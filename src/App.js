@@ -8,6 +8,8 @@ import AddStudent from './components/pages/AddStudent/AddStudent';
 import Login from './components/pages/Login/Login';
 import NotFound from './components/pages/NotFound/NotFound';
 import ChartDataGrab from './components/pages/Charts/ChartDataGrab';
+import LineDataGrab from './components/pages/Charts/LineDataGrab';
+import AllCharts from './components/pages/Charts/AllCharts';
 
 const App = () => {
 
@@ -25,7 +27,6 @@ const App = () => {
   const LoginContainer = () => (
     <div>
       <Route exact path="/" render={() => <Redirect to="/login" />} />
-
     </div>
   )
 
@@ -48,7 +49,10 @@ const App = () => {
           <Route path='/' exact component={Main} />
           <Route path="/addStudent" component={AddStudent} />        
           <Route path="/login" component={Login} /> 
-          <Route path="/charts" component={ChartDataGrab} /> 
+          {/* <Route path="/charts" component={ChartDataGrab} /> 
+          <Route path="/LineCharts" component={LineDataGrab} />  */}
+          <Route path="/AllCharts" component={AllCharts} /> 
+
           <Route component={NotFound} /> 
         </Switch>
         

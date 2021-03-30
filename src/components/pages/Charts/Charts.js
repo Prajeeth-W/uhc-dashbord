@@ -20,7 +20,7 @@ export default class Charts extends Component {
                     data={this.state.chartData}
                     width={100}
                     height={50}
-                    backgroundColor = 'rgb(100,0,0)' // <<= cannot fix yet
+                    //fillColor = 'rgb(100,0,0)' // <<= cannot fix yet
                     options={
                         { 
                             title:{

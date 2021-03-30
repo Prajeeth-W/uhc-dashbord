@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Charts from './Charts';
-
+import './chartBg.css';
 
 export default class ChartDataGrab extends Component {
   constructor(){
@@ -19,7 +19,7 @@ export default class ChartDataGrab extends Component {
     // Ajax calls here
     this.setState({
       chartData:{
-        labels: ['course-1', 'course-2', 'course-3', 'course-4', 'course-5', 'course-6'],
+        labels: ["course-1", 'course-2', 'course-3', 'course-4', 'course-5', 'course-6'],
         datasets:[
           {
             label:'No of Students',
@@ -48,8 +48,10 @@ export default class ChartDataGrab extends Component {
 
   render() {
     return (
-      <div >        
+      <div style={{backgroundColor:'white'}}>   
+      <div className ="canvas1">
         <Charts chartData={this.state.chartData} legendPosition="bottom"/>
+        </div>     
       </div>
     );
   }
