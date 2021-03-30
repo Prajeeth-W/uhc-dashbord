@@ -1,7 +1,13 @@
-import {useState} from 'react';
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+
 import Main from './components/main/Main';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
+import AddStudent from './components/pages/AddStudent/AddStudent';
+import Login from './components/pages/Login/Login';
+import NotFound from './components/pages/NotFound/NotFound';
+import ChartDataGrab from './components/pages/Charts/ChartDataGrab';
 
 const App = () => {
 
@@ -14,16 +20,41 @@ const App = () => {
   const closeSidebar = () => {
     setSidebarOpen(false);
   }
-  
+
+
+  const LoginContainer = () => (
+    <div>
+      <Route exact path="/" render={() => <Redirect to="/login" />} />
+
+    </div>
+  )
+
+
+  const DefaultContainer = () => (
+    <div>
+
+    </div>
+  )
+
   return (
-    <div className= "container"> 
-      <Navbar sidebarOpen = {sidebarOpen} openSidebar= {openSidebar}/>
-      {/* <h1> UHC Admin Dashbord</h1>   */}
-     <Main/>
-      <Sidebar sidebarOpen = {sidebarOpen} closeSidebar = {closeSidebar} /> 
+    <div className="container">
       
-    </div>   
+      <Router>
+        
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />      
+        <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+
+        <Switch>
+          <Route path='/' exact component={Main} />
+          <Route path="/addStudent" component={AddStudent} />        
+          <Route path="/login" component={Login} /> 
+          <Route path="/charts" component={ChartDataGrab} /> 
+          <Route component={NotFound} /> 
+        </Switch>
+        
+      </Router>
+    </div>
   );
 }
 
-export default App; 
+export default App;

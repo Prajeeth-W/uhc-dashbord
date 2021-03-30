@@ -7,7 +7,6 @@ const Main = () => {
         <main>
 
             <div className = "main__container">
-
                 <div className = "main__title">
                     <img src="dashboard.svg" alt="dashbord_image" style = {{ height:'20vh'}} />
                     <div className = "main__greeting" >
@@ -15,11 +14,9 @@ const Main = () => {
                         <p>Welcome to your admin dashbord</p>
                     </div>
                 </div>
-
             </div>
 
             <div className = "main__cards">
-
                 <div className = "card" >
                     <i className = "fa fa-user-o fa-2x text-lightblue"></i>
                     <div className = "card_inner">
@@ -47,12 +44,10 @@ const Main = () => {
                         <p className = "text-primary-p" >Number of Likes:</p>
                         <span className = "font-bold text-title">1143</span>
                     </div>
-                </div>
-                
+                </div>                
             </div>
 
             <div className = "charts" >
-
                 <div className = "charts__left">
                     <div className = "charts__left__title">
                         <div>
@@ -65,7 +60,6 @@ const Main = () => {
                 </div>
                 
                 <div className = "charts__right">
-
                     <div className = "charts__right__title">
                         <div>
                             <h1>Status Reports</h1>
@@ -90,8 +84,7 @@ const Main = () => {
                         <div className = "card4">
                             <h1>Lorem </h1>
                             <p> test </p>
-                        </div>
-                        
+                        </div>                        
                     </div>
 
                 </div>
