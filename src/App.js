@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 
 import Main from './components/main/Main';
 import Navbar from './components/navbar/Navbar';
@@ -20,19 +20,36 @@ const App = () => {
     setSidebarOpen(false);
   }
 
+
+  const LoginContainer = () => (
+    <div>
+      <Route exact path="/" render={() => <Redirect to="/login" />} />
+
+    </div>
+  )
+
+
+  const DefaultContainer = () => (
+    <div>
+
+    </div>
+  )
+
   return (
     <div className="container">
+      
       <Router>
-        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
-        {/* <h1> UHC Admin Dashbord</h1>   */}
-        <Route path='/' exact component={Main} />
+        
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />      
         <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
 
-        <Route path="/addStudent" component={AddStudent} />
-        {/* <Route path="/notFound" component={PageNotF} />*/ }
-        <Route path="/login" component={Login} /> 
-        <Route path="/notf" component={NotFound} /> 
-
+        <Switch>
+          <Route path='/' exact component={Main} />
+          <Route path="/addStudent" component={AddStudent} />        
+          <Route path="/login" component={Login} /> 
+          <Route component={NotFound} /> 
+        </Switch>
+        
       </Router>
     </div>
   );
