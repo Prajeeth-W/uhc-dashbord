@@ -7,6 +7,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import AddStudent from './components/pages/AddStudent/AddStudent';
 import Login from './components/pages/Login/Login';
 import NotFound from './components/pages/NotFound/NotFound';
+import ChartDataGrab from './components/pages/Charts/ChartDataGrab';
 
 const App = () => {
 
@@ -47,6 +48,7 @@ const App = () => {
           <Route path='/' exact component={Main} />
           <Route path="/addStudent" component={AddStudent} />        
           <Route path="/login" component={Login} /> 
+          <Route path="/cdg" component={ChartDataGrab} /> 
           <Route component={NotFound} /> 
         </Switch>
         
