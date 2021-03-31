@@ -8,6 +8,7 @@ import AddStudent from './components/pages/AddStudent/AddStudent';
 import Login from './components/pages/Login/Login';
 import NotFound from './components/pages/NotFound/NotFound';
 import AllCharts from './components/pages/Charts/AllCharts';
+import Checkout from './components/pages/Checkout/Checkout';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -33,6 +34,7 @@ const App = () => {
   )
 
   return (
+<<<<<<< HEAD
     <div >      
       <div className="container">
         <Router>
@@ -55,6 +57,28 @@ const App = () => {
         </Router>
       </div>  
       
+=======
+    <div className="container">
+
+      <Router>
+
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
+        <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+
+        <Switch>
+          <Route path='/' exact component={Main} />
+          <Route path="/addStudent" component={AddStudent} />
+          <Route path="/login" component={Login} />
+          {/* <Route path="/charts" component={ChartDataGrab} /> 
+          <Route path="/LineCharts" component={LineDataGrab} />  */}
+          <Route path="/allCharts" component={AllCharts} />
+          {/* <Route path="/checkout" component={Checkout} /> */}
+
+          <Route component={NotFound} />
+        </Switch>
+
+      </Router>
+>>>>>>> 662a195778f205c97accb77bba2cfb6facc9bfc3
     </div>
   );
 }
