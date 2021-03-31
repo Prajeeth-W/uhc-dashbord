@@ -1,12 +1,11 @@
 main {
-    background: #f3f4f6;
+    background: #f6f5f3;
     grid-area: main;
     overflow-y: auto;
 }
 .main__container {
     padding:20px 35px;
 }
-
 .main__title {
     display: flex;
     align-items: center;
@@ -16,7 +15,6 @@ main {
     object-fit: contain;
     margin-right: 20px;
 }
-
 .main__greeting > h2 {
     font-size: 24px;
     color: #2e4a66;
@@ -27,7 +25,6 @@ main {
     font-weight: 700;
     color: #a5aaad;
 }
-
 .main__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -157,6 +154,29 @@ main {
      border-radius: 5px;
      font-size: 14px;    
 }
+ /* added chartbg grid styles */
+ .all_main__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+.all_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+     box-shadow: 5px 5px 13px #ededed , -5px -5px 13px #ffffff;     
+}
+.all_card_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width:855px ){
     .main__cards {
