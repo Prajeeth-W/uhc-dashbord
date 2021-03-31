@@ -33,7 +33,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-archive"></i>
-                    <a href="#">Payments</a>
+                    <a href="/checkout">Payments</a>
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-handshake-o"></i>
@@ -52,7 +52,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 <h2>Reporting</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-money"></i>
-                    <a href="/AllCharts">View Reports</a>
+                    <a href="/allCharts">View Reports</a>
                 </div>
                 <div className="sidebar__logout">
                     <i className="fa fa-power-off"></i>
