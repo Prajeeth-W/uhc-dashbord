@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     <a href={"/"}>
                         <img src="/Project.jpeg" alt="Logo" style={{ height: '18vh', width: 'auto' }} />
                     </a>
-                    <h1>United Heart Consultant</h1>
+                    <h1 style={{padding:'10px'}}>United Heart Consultant</h1>
                 </div>
                 <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()} ></i>
             </div>

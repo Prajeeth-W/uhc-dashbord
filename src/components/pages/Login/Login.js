@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import "./Login.css";
-// import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
-//  import {FacebookLoginButton} from 'react-social-login-buttons';
 
 class Login extends Component {
   render() {
     return (
-        <div className="ui middle aligned center aligned grid">
+      <div className="ui middle aligned center aligned grid">
         <div className="column">
+
           <h2 className="ui teal image header">
-            <img src="Project.jpeg" className="image"/>
+            <img src="Project.jpeg" className="image" alt="logo" />
             <div className="content">
               Log-in to your account
             </div>
           </h2>
+
           <form className="ui large form">
             <div className="ui stacked segment">
               <div className="field">
@@ -22,17 +22,17 @@ class Login extends Component {
                   <input type="text" name="email" placeholder="E-mail address"/>
                 </div>
               </div>
+
               <div className="field">
                 <div className="ui left icon input">
                   <i className="lock icon"></i>
                   <input type="password" name="password" placeholder="Password"/>
                 </div>
               </div>
-              <div className="ui fluid large teal submit button">Login</div>
-            </div>
-      
-            <div className="ui error message"></div>
-      
+
+              <div className="ui fluid large teal submit button">Login</div>              
+            </div>      
+            <div className="ui error message"></div>      
           </form>
       
           <div className="ui message">
