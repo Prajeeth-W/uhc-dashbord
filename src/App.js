@@ -16,6 +16,8 @@ import Login from "./components/pages/Login/Login";
 import NotFound from "./components/pages/NotFound/NotFound";
 import AllCharts from "./components/pages/Charts/AllCharts";
 import Checkout from "./components/pages/Checkout/Checkout";
+import AddNewStud from "./components/pages/AddNewStud/AddNewStud";
+import AddNewCourse from "./components/pages/AddNewCourse/AddNewCourse";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -41,7 +43,9 @@ const App = () => {
         <Route path="/" exact component={Main} />
         <Route path="/addStudent" component={AddStudent} />
         <Route path="/allCharts" component={AllCharts} />
-
+        <Route path="/addNewStud" component={AddNewStud} />
+        <Route path="/addNewCourse" component={AddNewCourse} />
+        
         <Route component={NotFound} />
       </Switch>
     </div>

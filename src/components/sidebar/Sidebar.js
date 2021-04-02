@@ -52,11 +52,11 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 <h2>Configurations</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-question"></i>
-                    <a href="#">Add Courses</a>
+                    <a href="/addNewCourse">Add Courses</a>
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-files-o"></i>
-                    <a href="#">Add new Student</a>
+                    <a href="/addNewStud">Add new Student</a>
                 </div>
                 <h2>Reporting</h2>
                 <div className="sidebar__link">
