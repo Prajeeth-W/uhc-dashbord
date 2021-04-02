@@ -3,3 +3,15 @@ meke css tika dapan tutorial eka balana
 Login page ekak hadannath ona - https://www.youtube.com/watch?v=XHPL-rX9m-Q&ab_channel=KrisFoster 
 404 - https://www.youtube.com/watch?v=PbKOX2tkHlI
 */
+.st_form{
+    background: #f6f5f3;
+    grid-area: main;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .form_area {
+    display: grid;
+    grid-template-columns:1fr  ;
+    gap:30px;
+    margin-top: 50px 5px;
+  }

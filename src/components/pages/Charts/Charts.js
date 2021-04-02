@@ -19,8 +19,8 @@ export default class Charts extends Component {
                 <Bar
                     data={this.state.chartData}
                     width={100}
-                    height={50}
-                    //fillColor = 'rgb(100,0,0)' // <<= cannot fix yet
+                    height={250}      
+                                  
                     options={
                         { 
                             title:{
@@ -31,7 +31,9 @@ export default class Charts extends Component {
                             legend:{
                             display:this.props.displayLegend,
                             position: this.props.legendPosition
-                            } 
+                            } ,
+                            responsive: true, 
+                            maintainAspectRatio: false,
                         }
                     }
                 />

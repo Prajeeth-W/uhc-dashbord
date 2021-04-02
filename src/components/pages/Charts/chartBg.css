@@ -16,71 +16,71 @@
   }
   .all_chart {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr ;
     gap:30px;
-    margin-top: 50px 5px;
+    margin-top: 10px;
   }
 
-  .all_charts__left {
+  .all_charts__line {
     padding: 25px;
     border-radius: 5px;
     background: #ffffff;
     box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
 }
-  .all_charts__Mid {
+  .all_charts__bar {
     padding: 25px;
     border-radius: 5px;
     background: #ffffff;
     box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
 }
-  .all_charts__Right {
+  .all_charts__pie {
     padding: 25px;
     border-radius: 5px;
     background: #ffffff;
     box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
 }
 
-.all_charts__left__title {
+.all_charts__line__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.all_charts__left__title > div >h1 {
+.all_charts__line__title > div >h1 {
   font-size: 24px;
   color: #2e4a66;
   margin-bottom: 5px;
 }
-.all_charts__left__title > div > p {
+.all_charts__line__title > div > p {
   font-size: 14px;
   font-weight: 700;
   color: #a5aaad;
 }
-.all_charts__mid__title {
+.all_charts__bar__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.all_charts__mid__title > div >h1 {
+.all_charts__bar__title > div >h1 {
   font-size: 24px;
   color: #2e4a66;
   margin-bottom: 5px;
 }
-.all_charts__mid__title > div > p {
+.all_charts__bar__title > div > p {
   font-size: 14px;
   font-weight: 700;
   color: #a5aaad;
 }
-.all_charts__right__title {
+.all_charts__pie__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.all_charts__right__title > div >h1 {
+.all_charts__pie__title > div >h1 {
   font-size: 24px;
   color: #2e4a66;
   margin-bottom: 5px;
 }
-.all_charts__right__title > div > p {
+.all_charts__pie__title > div > p {
   font-size: 14px;
   font-weight: 700;
   color: #a5aaad;
