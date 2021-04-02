@@ -27,13 +27,14 @@ class AddStudent extends React.Component {
   };
 
   render() {
-    return (
-      <student>
+    return (      
         <div className="st_form">
+
           <div className="form_area">
 
             <form className="ui form">
               <div className="two fields">
+                <p>(TESTING - {this.state.fName} ) </p> {/*TEST*/}
                 <div class="six wide field">
                   <label> Student Number:</label>
                   <input
@@ -43,7 +44,7 @@ class AddStudent extends React.Component {
                     onChange={(ev) => this.setState({ stNo: ev.target.value })}
                   />
                 </div>
-                <p>(TESTING - {this.state.fName} ) </p> {/*TEST*/}
+                
               </div>
 
               <div className="three fields">
@@ -136,8 +137,8 @@ class AddStudent extends React.Component {
 
           </div>
         </div>
-      </student>
-    );
+      
+    )
   }
 }
 export default AddStudent;
