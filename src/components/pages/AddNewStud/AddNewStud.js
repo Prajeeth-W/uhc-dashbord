@@ -51,7 +51,7 @@ class AddNewStud extends React.Component {
              
               <div className="two fields"> {/*submit */}
               <div className="field">
-                <input type="submit" class="ui fluid teal large button" />
+              <div className="ui fluid large teal submit button">Add Student</div>
               </div>
               </div>
               
