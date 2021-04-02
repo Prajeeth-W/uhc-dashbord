@@ -18,8 +18,22 @@ class AddNewCourse extends React.Component {
   };
 
   render() {
-    return (      
+    return (            
         <div className="course_form">
+
+<div class="ui compact menu">
+  <div class="ui simple dropdown item">
+    Dropdown
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">Choice 1</div>
+      <div class="item">Choice 2</div>
+      <div class="item">Choice 3</div>
+    </div>
+  </div>
+</div> 
+
+
           <div className="form_area">
             <form className="ui form">    
               <div className="field">   {/*Course Name*/}
@@ -53,6 +67,8 @@ class AddNewCourse extends React.Component {
               </div>
               
             </form>
+
+            
 
           </div>
         </div>

@@ -5,12 +5,38 @@ import ChartDataGrab from './ChartDataGrab';
 import LineDataGrab from './LineDataGrab';
 import PieDataGrab from './PieDataGrab';
 
-export const AllCharts = () => {
+
+export const AllCharts = () => {   
+
+    function onMenuClick (){
+        console.log('(intended to call a function in the chart data component)')
+    }
+
     return (
         <div className = "report">
+            <div class="ui compact menu">
+                <div class="ui simple dropdown item">
+                    Dropdown 1
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                    <div class="item" onClick={onMenuClick}>Lorem 1</div>
+                    <div class="item" onClick={onMenuClick}>Lorem 2</div>
+                    <div class="item" onClick={onMenuClick}>Lorem 3</div>
+                    
+                    </div>
+                </div>
 
+                <div class="ui simple dropdown item">
+                    Dropdown 2
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                    <div class="item" onClick={onMenuClick}>Choice 1</div>
+                    <div class="item" onClick={onMenuClick}>Choice 2</div>
+                    <div class="item" onClick={onMenuClick}>Choice 3</div>
+                    </div>
+                </div>
+            </div> 
             <div className = "all_chart"> 
-
                 <div className = "all_charts__line">
                     <div className = "all_charts__line__title">
                         <div>

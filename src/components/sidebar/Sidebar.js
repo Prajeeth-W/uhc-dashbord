@@ -17,7 +17,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             <div className="sidebar__title">
                 <div className="sidebar__img">
                     <a href={"/"}>
-                        <img src="/Project.jpeg" alt="Logo" style={{ height: '18vh', width: 'auto' }} />
+                        <img src="/Project.jpeg" alt="Logo" style={{ height: '17vh', width: 'auto' }} />
                     </a>
                     <h1 style={{padding:'10px'}}>United Heart Consultant</h1>
                 </div>
