@@ -53,7 +53,7 @@ const App = () => {
           {/* <Route path="/charts" component={ChartDataGrab} /> 
           <Route path="/LineCharts" component={LineDataGrab} />  */}
           <Route path="/allCharts" component={AllCharts} />
-          {/* <Route path="/checkout" component={Checkout} /> */}
+          <Route path="/checkout" component={Checkout} />
 
           <Route component={NotFound} />
         </Switch>

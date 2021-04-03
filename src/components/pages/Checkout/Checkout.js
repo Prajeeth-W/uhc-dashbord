@@ -1,20 +1,20 @@
-// import React, { useState } from 'react'
-// import Paypal from '../Paypal/Paypal';
+import React, { useState } from 'react'
+import Paypal from '../Paypal/Paypal';
 
-// const Checkout = () => {
+const Checkout = () => {
 
-//     const [checkout, setCheckout] = useState(false)
+    const [checkout, setCheckout] = useState(false)
 
-//     return (
-//         <div>
-//             {checkout ? (
-//                 <Paypal />
-//             ) : (
-//                 <button onClick={() => setCheckout(true)}>Checkout</button>
-//             )}
+    return (
+        <div>
+            {checkout ? (
+                <Paypal />
+            ) : (
+                <button onClick={() => setCheckout(true)}>Checkout</button>
+            )}
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
-// export default Checkout;
+export default Checkout;
