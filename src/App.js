@@ -45,7 +45,8 @@ const App = () => {
         <Route path="/allCharts" component={AllCharts} />
         <Route path="/addNewStud" component={AddNewStud} />
         <Route path="/addNewCourse" component={AddNewCourse} />
-        
+        <Route path="/checkout" component={Checkout} />
+
         <Route component={NotFound} />
       </Switch>
     </div>
