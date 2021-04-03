@@ -1,3 +1,4 @@
+ 
 .navbar{
     background: #ffffff;
     grid-area: nav;
@@ -47,6 +48,9 @@
     padding: 7px;
 }
 
+
+
+
 @media only screen and (max-width:978px){
     .nav_icon {
         display: inline;
@@ -57,3 +61,4 @@
         display: none;
     }
 }
+

@@ -36,6 +36,7 @@
     padding: 0 10px;
     font-weight: 700;
 }
+
 .sidebar__link {
     color: #f3f4f6;
     padding: 10px;
@@ -46,6 +47,17 @@
     background: rgba(62, 161, 117, 0.3);
     color: #3ea175;
 }
+
+.sidebar__link:hover {
+    background-color: rgba(62, 161, 117, 0.3);
+    color: #3ea175;
+}
+
+.sidebar__link:active {
+    background-color: rgba(126, 87, 29, 0.3);
+    color: #3ea175;
+}
+
 .active_menu_link a {
     color: #3ea175 !important;
 }

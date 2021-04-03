@@ -1,4 +1,3 @@
-
   /* .wrapper{
     width:50%;
     display:block;
@@ -9,12 +8,93 @@
     border-radius:4px;
     
   } */
+  .report{
+    background: #f6f5f3;
+    grid-area: main;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .all_chart {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap:30px;
+    margin-top: 10px;
+  }
+
+  .all_charts__line {
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
+}
+  .all_charts__bar {
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
+}
+  .all_charts__pie {
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px  #ededed , -5px -5px 13px #ffffff;
+}
+
+.all_charts__line__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all_charts__line__title > div >h1 {
+  font-size: 24px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+.all_charts__line__title > div > p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+.all_charts__bar__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all_charts__bar__title > div >h1 {
+  font-size: 24px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+.all_charts__bar__title > div > p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
+.all_charts__pie__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all_charts__pie__title > div >h1 {
+  font-size: 24px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+.all_charts__pie__title > div > p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a5aaad;
+}
   .canvas{
-    background:rgb(158, 179, 216);
+    background:rgb(158, 179, 216, 0.322);
     height:250px;
   }
   .canvas1{
-    background:rgb(165, 216, 158);
+    background:rgba(132, 187, 125, 0.322);
+    height:250px;
+  }
+  .canvas2{
+    background:rgba(189, 178, 142, 0.322);
     height:250px;
   }
   

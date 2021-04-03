@@ -4,22 +4,31 @@ import React from 'react'
 
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
+
+    function handleClick(e) {
+        e.preventDefault();
+            // clicked item highlighting- add 
+        ;
+      }
+
+
     return (
         <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
             <div className="sidebar__title">
                 <div className="sidebar__img">
                     <a href={"/"}>
-                        <img src="/Project.jpeg" alt="Logo" style={{ height: '18vh', width: 'auto' }} />
+                        <img src="/Project.jpeg" alt="Logo" style={{ height: '17vh', width: 'auto' }} />
                     </a>
-                    <h1>United Heart Consultant</h1>
+                    <h1 style={{padding:'10px'}}>United Heart Consultant</h1>
                 </div>
                 <i className="fa fa-times" id="sidebarIcon" onClick={() => closeSidebar()} ></i>
             </div>
 
             <div className="sidebar__menu">
-                <div className="sidebar__link active_menu_link">
+                {/* <div className="sidebar__link active_menu_link"> */}
+                <div className="sidebar__link">
                     <i className="fa fa-home"></i>
-                    <a href="#">Dashbord</a>
+                    <a href="#" onClick={handleClick} >Dashbord</a>
                 </div>
 
                 <h2>Lorem</h2>
@@ -43,11 +52,11 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 <h2>Configurations</h2>
                 <div className="sidebar__link">
                     <i className="fa fa-question"></i>
-                    <a href="#">Add Courses</a>
+                    <a href="/addNewCourse">Add Courses</a>
                 </div>
                 <div className="sidebar__link">
                     <i className="fa fa-files-o"></i>
-                    <a href="#">Add new Student</a>
+                    <a href="/addNewStud">Add new Student</a>
                 </div>
                 <h2>Reporting</h2>
                 <div className="sidebar__link">
@@ -60,8 +69,10 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
 
             </div>
-
+            
         </div>
+
+        
     )
 }
 

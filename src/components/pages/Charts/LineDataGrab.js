@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LineChart from './LineChart'
+import './chartBg.css';
 
 export default class LineDataGrab extends Component {
     constructor(){
@@ -41,7 +42,7 @@ export default class LineDataGrab extends Component {
 
     render() {
         return (
-            <div style={{backgroundColor:'white'}}>
+            <div className ="canvas2">
                 <LineChart chartData={this.state.chartData}/>    
             </div>
         )

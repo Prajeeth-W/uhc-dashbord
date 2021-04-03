@@ -1,4 +1,8 @@
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import  './Navbar.css';
+import React, { Fragment }  from 'react'
+import LoginIcon from '../pages/LoginIcon/LoginIcon';
+
 
 const Navbar = ({ sidebarOpen, openSidebar }) => {
     return(
@@ -21,12 +25,27 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                 <a href = "#">
                     <i className = "fa fa-clock-o"> </i>
                 </a>
-                <a href = "#">
+                {/* <a href = "/login">
                     <img width = "30" src = "/avatar.svg"alt ="avatar" />
-                </a>
+                </a> */}
+                
+                <Router>                    
+                    <a href="/login" >
+                        <img width = "30" src = "/avatar.svg"alt ="avatar" />                        
+                    </a>
+                    <Route path="/login" component={Loginf} />                    
+                </Router>
+
             </div>
         </nav>
     )
 }
+const Loginf = () =>(
+    <Fragment>
+        {/* <Redirect to="/login" /> */}
+        <LoginIcon/>
+    </Fragment>
+    
+);
 
 export default Navbar;

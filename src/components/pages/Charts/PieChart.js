@@ -36,7 +36,9 @@ export default class PieChart extends Component {
                                     boxWidth: 10,
                                     padding: 12
                                     }
-                                }
+                                },
+                                responsive: true, 
+                                maintainAspectRatio: false,
 
                         }
                     }                

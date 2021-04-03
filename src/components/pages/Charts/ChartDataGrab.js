@@ -48,9 +48,9 @@ export default class ChartDataGrab extends Component {
 
   render() {
     return (
-      <div style={{backgroundColor:'white'}}>   
-      <div className ="canvas1">
-        <Charts chartData={this.state.chartData} legendPosition="bottom"/>
+      <div  >   
+        <div className ="canvas1">
+          <Charts chartData={this.state.chartData} legendPosition="bottom"/>
         </div>     
       </div>
     );
