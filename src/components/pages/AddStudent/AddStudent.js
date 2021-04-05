@@ -76,10 +76,7 @@ class AddStudent extends React.Component {
                 </div>
               </div>
 
-              <div className="field">
-                <label> Email Address:</label>
-                <input type="email" name="email" onChange={this.inputUpdate} />
-              </div>
+              
               
               <div className="fields">
                 <div class="twelve wide field">
@@ -100,48 +97,48 @@ class AddStudent extends React.Component {
                 </div>
               </div>
 
-              <div className="two fields">
+              <div className = "center_align">
                 <div className="field">
                   <label> City:</label>
                   <input type="text" name="city" onChange={this.inputUpdate} />
                 </div>
-              </div>
+              
 
-              <div className="two fields">
+              
                 <div className="field">
                   <label> State:</label>
                   <input type="text" name="state" onChange={this.inputUpdate} />
                 </div>
-              </div>
-              
-
-              <div className="two fields">
                 <div className="field">
                   <label> Zip Code:</label>
                   <input type="text" name="ZIP" onChange={this.inputUpdate} />
                 </div>
-              </div>
               
-              <div className="two fields">
+                <div className="field">
+                <label> Email Address:</label>
+                <input type="email" name="email" onChange={this.inputUpdate} />
+                </div>
+              
                 <div className="field">
                   <label> Phone Number:</label>
                   <input type="text" name="phoneNo" onChange={this.inputUpdate} />
                 </div>
-              </div>             
+                           
 
-              <div className="two fields">
+              
                 <div className="field">
                 <label>Course Code:</label>
                 <input type="text" name="courseCode" onChange={this.inputUpdate} />
                 </div>
-              </div>
               
-              <div className="two fields">
+              
+              
               <div className="field">
-                <input type="submit" class="ui fluid teal large button" />
-              </div>
+                <input type="submit" className ="ui fluid teal large button" style={{padding:'10px'}} />
               </div>
               
+              </div>
+
             </form>
 
           </div>

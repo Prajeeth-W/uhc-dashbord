@@ -11,3 +11,8 @@
     gap:30px;
     margin:5px 50px 25px 50px ;
   }
+
+ .center_align{ 
+  margin: auto;
+  width:80%;
+}

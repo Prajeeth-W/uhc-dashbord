@@ -20,8 +20,11 @@
     object-fit: contain;
 }
 .sidebar__title > div > h1 {
-    font-size: 18px;
+    font-size: 20px;
     display: inline;
+    padding:5px;
+    text-align:left;
+    margin-top:1px;
 }
 .sidebar__title > i {
     font-size: 18px;

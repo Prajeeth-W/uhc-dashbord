@@ -14,13 +14,7 @@
     overflow-x: auto;
     overflow-y: auto;
   }
-  .all_chart {
-    display: grid;
-    grid-template-columns:1fr 1fr ;
-    gap:30px;
-    margin-top: 10px;
-  }
-
+  
   .all_charts__line {
     padding: 25px;
     border-radius: 5px;
@@ -97,4 +91,27 @@
     background:rgba(189, 178, 142, 0.322);
     height:250px;
   }
+
+  .all_chart{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap:30px;
+    margin: 10px 0;
+  }
+  .chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+
+  @media only screen and (max-width:855px ){
+    .all_chart{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom:0 ;
+    }
+    
+} 
   
