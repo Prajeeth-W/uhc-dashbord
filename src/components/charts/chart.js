@@ -1,5 +1,6 @@
 import "../../../node_modules/react-vis/dist/style.css";
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, VerticalGridLines, LineSeries} from 'react-vis';
+
 const Chart = () => {
 
     const data = [
@@ -13,6 +14,7 @@ const Chart = () => {
            { x:7 , y:3},
            { x:8 , y:2},
            { x:9 , y:8},
+           { x:10 , y:8}
     ]
     return (
         <div style={{ marginTop: '15px'}}>

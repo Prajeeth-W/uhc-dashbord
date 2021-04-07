@@ -18,6 +18,7 @@ import AllCharts from "./components/pages/Charts/AllCharts";
 import Checkout from "./components/pages/Checkout/Checkout";
 import AddNewStud from "./components/pages/AddNewStud/AddNewStud";
 import AddNewCourse from "./components/pages/AddNewCourse/AddNewCourse";
+import Table from "./components/pages/Table/Table";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -46,11 +47,13 @@ const App = () => {
         <Route path="/addNewStud" component={AddNewStud} />
         <Route path="/addNewCourse" component={AddNewCourse} />
         <Route path="/checkout" component={Checkout} />
+        <Route path="/table" component={Table} />      
 
         <Route component={NotFound} />
       </Switch>
     </div>
   );
+  
   const UiItems = () => (
     <div>
       <Switch>

@@ -50,9 +50,10 @@ const Main = () => {
             <div className = "charts" >
                 <div className = "charts__left">
                     <div className = "charts__left__title">
-                        <div>
-                            <h1>Login Regions</h1>
-                            <p>Cupertino, California, USA</p>
+                        <div>                            
+                            <a className="ui fluid large teal submit button"  href="/allCharts">Disply Chart Summery</a>
+                            <h1>Overall Students Registration</h1>
+                            <p>Total Number of Students Registration By Today !</p>
                         </div>
                         <i className = "fa fa-usd"></i>
                     </div>
@@ -63,7 +64,7 @@ const Main = () => {
                     <div className = "charts__right__title">
                         <div>
                             <h1>Status Reports</h1>
-                            <p>Cupertino, California, USA</p>
+                            <p>Cupertino, California, USA</p>                            
                         </div>
                         <i className = "fa fa-use"></i>
                     </div>
