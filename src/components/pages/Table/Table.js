@@ -33,7 +33,7 @@ export default function Table() {
                         <td>01</td>
                         <td>Dhanushka H</td>
                         <td>September 14, 2013</td>
-                        <td>Kuku_abili@gmail.com</td>
+                        <td>dhanushsaklpsdarf_abili@gmail.com</td>
                         <td>Yes</td>
                         <td>6</td>
                         <td>No</td>

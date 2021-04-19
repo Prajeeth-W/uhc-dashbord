@@ -1,11 +1,5 @@
 import { useState, Fragment } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import {   BrowserRouter as Router,   Route,   Link,   Switch,   Redirect, } from "react-router-dom";
 import "./App.css";
 
 import Main from "./components/main/Main";
@@ -18,7 +12,7 @@ import AllCharts from "./components/pages/Charts/AllCharts";
 import Checkout from "./components/pages/Checkout/Checkout";
 import AddNewStud from "./components/pages/AddNewStud/AddNewStud";
 import AddNewCourse from "./components/pages/AddNewCourse/AddNewCourse";
-import Table from "./components/pages/Table/Table";
+import Table2 from "./components/pages/Table2/Table2";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -26,9 +20,11 @@ const App = () => {
   const openSidebar = () => {
     setSidebarOpen(true);
   };
+
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
+  
   const LoginContainer = () => (
     <div >
       <Route exact path="/" render={() => <Redirect to="/login" />} />
@@ -47,7 +43,7 @@ const App = () => {
         <Route path="/addNewStud" component={AddNewStud} />
         <Route path="/addNewCourse" component={AddNewCourse} />
         <Route path="/checkout" component={Checkout} />
-        <Route path="/table" component={Table} />      
+        <Route path="/table" component={Table2} />      
 
         <Route component={NotFound} />
       </Switch>
