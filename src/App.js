@@ -75,23 +75,3 @@ const App = () => {
 };
 
 export default App;
-
-// {/* <div className="container">
-
-//       <Router>
-//           <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
-//           <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
-
-//           <Switch>
-//               <Route path='/' exact component={Main} />
-//               <Route path="/addStudent" component={AddStudent} />
-//               {/* <Route path="/login" component={Login} /> */ }
-//     //           <Route path="/allCharts" component={AllCharts} />
-//     //           <Route path="/login" />
-//     //           {/* <Route path="/checkout" component={Checkout} /> */}
-
-//     //           <Route component={NotFound} />
-//     //       </Switch>
-//     //   </Router>
-
-//     // </div> */}
