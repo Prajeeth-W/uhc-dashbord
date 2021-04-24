@@ -1,6 +1,12 @@
 import React from "react";
 import "./AddStudent.css";
 
+<<<<<<< HEAD
+=======
+import API from "../../services/api";
+
+
+>>>>>>> d2a95a7ef60f732a12049080be26ed7f5cdfc51b
 class AddStudent extends React.Component {
   state = {
     fName: "",
