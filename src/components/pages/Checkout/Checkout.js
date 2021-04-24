@@ -7,12 +7,8 @@ const Checkout = () => {
 
     return (
         <div>
-            {checkout ? (
-                <Paypal />
-            ) : (
-                <button onClick={() => setCheckout(true)}>Checkout</button>
-            )}
-
+            {checkout ? (<Paypal />) : (<button onClick={() => setCheckout(true)}>Checkout</button>)}
+            
         </div>
     )
 }

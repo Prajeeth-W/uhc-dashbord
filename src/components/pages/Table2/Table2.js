@@ -14,14 +14,14 @@ export const Table2 = () => {
 
                 <Table2Data
                     no='00001'
-                    name='Chamal Fucker'
+                    name='James Bond'
                     regDate='01/04/2021'
                     email='cf@gmail.com'
                     premium='Yes'
                     nic='895662321v'
                     due='2500$'
                     courseCode='SE-1100'
-                    course='InterCourse'
+                    course='Intern'
                     total='5000$'
                     paid='2500$'
                     remain='2500$'
@@ -31,7 +31,7 @@ export const Table2 = () => {
                     no='00002'
                     name='Sam Robert'
                     regDate='02/04/2021'
-                    email='sf@gmail.com'
+                    email='sf123456@gmail.com'
                     premium='No'
                     nic='555555555v'
                     due='4501$'
@@ -58,27 +58,25 @@ export const Table2 = () => {
                 />
 
                     <tfoot className="full-width ">
-                        <tr>
+                        <tr >
                             
                             <th >
-                                
-                                
 
-                                <div className="ui small teal submit  labeled icon button" >
+                                <div className="ui small teal submit  labeled icon button " >
                                     <div  className="icon">
                                             <i className="material-icons  ">done</i>
                                     </div>
                                     Approve
                                 </div>
 
-                                <div className="ui small teal submit  labeled icon button ">
+                                <div className="ui small teal submit  labeled icon button" style={{margin:'2px 0 2px 0'}}>
                                     <div  className="icon">
                                             <i className="material-icons">send</i>
                                     </div>
                                     Send Email
                                 </div>
 
-                                <div className="ui right floated small  primary labeled icon button loc " >    
+                                <div className="ui small  primary labeled icon button loc mobileLoc "  >    
                                     <div  className="icon">
                                         <i className="material-icons  "> person_add_alt</i>
                                     </div>

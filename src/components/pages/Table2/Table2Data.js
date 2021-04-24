@@ -45,19 +45,8 @@ import React from 'react'
                             <td data-label="Paid Amount">{props.paid }</td>
                             <td data-label="Remaining">{props.remain }</td>
                         </tr>  
-                    </tbody>              
-                
-                    <tfoot className="full-width ">
-                        <tr>
-                            <th></th>
-                            <th colspan="12">
-                              
-                                
-
-                            </th>
-                        </tr>
-                    </tfoot>
-                    
+                    </tbody>  
+                      
                 </table>
             </div>                    
         

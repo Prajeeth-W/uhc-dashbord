@@ -4,15 +4,45 @@
     grid-area: main;
     overflow-x: auto;
     overflow-y: auto;
-  }
-  .form_area {
+}
+
+h1 {
+  text-align: center;
+}
+
+.form_area {
     display: grid;
     grid-template-columns:1fr;
     gap:30px;
     margin:5px 50px 25px 50px ;
-  }
+}
 
- .center_align{ 
+.center_align{ 
   margin: auto;
   width:80%;
+}
+
+.sameLineL{
+    text-align: right;
+    clear: both;
+    float:left;    
+}
+
+.sameLineI{
+  float:left;
+  padding-left: 2px;
+}
+
+.stId{
+  padding:5px 15px;
+  border: 1px solid rgb(31, 30, 30);
+  float: right;
+}
+
+button{
+   float:right;
+  padding:20px 0 20px 10;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }

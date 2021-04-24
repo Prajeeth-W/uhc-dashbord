@@ -40,6 +40,9 @@ body {
     left: -500px;
   }
 
+  .loc{
+    float: right;
+  }
   
   @media screen and (max-width: 600px) {
     table {
@@ -93,7 +96,10 @@ body {
       width: 25em;
       display : block;
     }
-    .loc{
+    .mobileLoc{
       float: left;
     }
+
+  
+    
   }
